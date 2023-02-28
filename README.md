@@ -1,27 +1,25 @@
-# KgcourseProject
+# Knowledge Graph Course - Project Template for your project!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+![Screenshot of Template UI](./doc/images/overview.png )
 
-## Development server
+This project contains example code that helps you to get started with your project.
+This example code displays a map of Vienna and enables to explore limited static GTFS data
+for the public transport of the city of Vienna as well as some housing information.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+We keep the project as simple as possible for not taking any influence 
+on the architecture you will choose in your project.
+Therefore, we only created an Angular 15 project, which directly loads the information from the csv/json files.
+Check "How to get started" for details of setting up the project.
 
-## Code scaffolding
+## How to get started 
+To keep the repository small, we decided to not include any housing information or GTFS data in the project.
+Therefore, you find the corresponding descriptions on how to download the information in the folders:
+* src/assets/data/README.md
+* helpers/wh/README.md 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+After you successfully downloaded all data, make sure you have installed the Angular CLI.
+If not, you find information regarding the CLI at `https://angular.io/cli`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Then, you can build and run the project. 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+The application will automatically reload if you change any of the source files.

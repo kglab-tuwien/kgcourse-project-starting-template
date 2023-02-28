@@ -1,0 +1,42 @@
+<div style="height: 600px;"
+     leaflet
+     [leafletOptions]="options"
+     [leafletLayersControl]="layersControl"
+     (leafletMapReady)="onMapReady($event)"
+>
+</div>
+
+<div class="mt-2">
+  <div class="text-center">
+    <h2 class="text-lg font-bold tracking-tight text-gray-800">Loading Status</h2>
+  </div>
+
+  <dl class="mt-2 grid grid-cols-2 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-5 lg:grid-cols-5">
+    <div class="flex flex-col bg-white/5">
+      <dt class="text-sm font-semibold leading-6 text-gray-700">Stops</dt>
+      <dd [ngClass]="{'text-green-500': stopsLoaded, 'text-red-500': !stopsLoaded }"
+          class="order-first text-3xl font-semibold tracking-tight">{{stopsLoaded ? '&#x2713;' : '&#x2718;'}}</dd>
+    </div>
+    <div class="flex flex-col bg-white/5">
+      <dt class="text-sm font-semibold leading-6 text-gray-700">Trips</dt>
+      <dd [ngClass]="{'text-green-500': tripsLoaded, 'text-red-500': !tripsLoaded }"
+          class="order-first text-3xl font-semibold tracking-tight">{{tripsLoaded ? '&#x2713;' : '&#x2718;'}}</dd>
+    </div>
+    <div class="flex flex-col bg-white/5">
+      <dt class="text-sm font-semibold leading-6 text-gray-700">Shapes</dt>
+      <dd [ngClass]="{'text-green-500': shapesLoaded, 'text-red-500': !shapesLoaded }"
+          class="order-first text-3xl font-semibold tracking-tight">{{shapesLoaded ? '&#x2713;' : '&#x2718;'}}</dd>
+    </div>
+    <div class="flex flex-col bg-white/5">
+      <dt class="text-sm font-semibold leading-6 text-gray-700">StopTimes</dt>
+      <dd [ngClass]="{'text-green-500': stopTimesLoaded, 'text-red-500': !stopTimesLoaded }"
+          class="order-first text-3xl font-semibold tracking-tight">{{stopTimesLoaded ? '&#x2713;' : '&#x2718;'}}</dd>
+    </div>
+    <div class="flex flex-col bg-white/5 col-span-2 sm:col-span-1">
+      <dt class="text-sm font-semibold leading-6 text-gray-700">Flats</dt>
+      <dd [ngClass]="{'text-green-500': flatsLoaded, 'text-red-500': !flatsLoaded }"
+          class="order-first text-3xl font-semibold tracking-tight">{{flatsLoaded ? '&#x2713;' : '&#x2718;'}}</dd>
+    </div>
+  </dl>
+
+</div>

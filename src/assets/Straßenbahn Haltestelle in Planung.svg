@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="strassenbahn-haltestelle-planung-icon" role="img" aria-labelledby="title desc" 
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 19 19" preserveAspectRatio="xMidYMid meet" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+<title id="title">Straßenbahn Haltestelle in Planung</title>
+<desc id="desc">An dieser Stelle befindet sich eine in Planung befindliche Straßenbahnhaltestelle.</desc>
+<style type="text/css">
+<![CDATA[
+	.circle-gross{fill:#B2B2B2;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+]]>
+</style>
+<circle role="presentation" class="circle-gross" cx="9.5" cy="9.5" r="9.25"/>
+</svg>
